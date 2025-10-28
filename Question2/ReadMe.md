@@ -1,70 +1,128 @@
-To develop a Dashboard Web Application that displays employee performance metrics, supports theme switching (light/dark), and allows users to filter data interactively.
+Question 2: Employee Dashboard Web Application
+Goal
 
-The dashboard should be visually appealing, interactive, and responsive on all screen sizes.
+To design an Employee Dashboard Web Application that displays performance metrics, allows theme switching, and supports data filtering interactively.
 
-HTML5 - Structure & Layout
+1️ HTML5 – Structure & Layout
 
-We use semantic HTML5 elements like <header>, <main>, <section>, and <footer> to keep the structure clean and organized.
+We use header, nav, main, and footer elements to structure the dashboard.
 
 Key Features:
 
-The header displays the dashboard title.
+Header: Displays dashboard title and theme toggle button.
 
-The main section contains filters, theme toggle buttons, and performance panels.
+Main Section: Contains performance metrics displayed using Bootstrap progress bars.
 
-The section inside main uses Bootstrap grid (row, col) to show employee cards.
+Aside/Filters: Allows users to filter data (department, performance range).
 
-Each card includes progress bars to represent performance metrics visually.
+Footer: Shows company copyright.
 
-CSS3 - Styling & Layout
+This structure makes the interface organized and easy to navigate.
 
-We combine CSS3 with Bootstrap for styling and responsive design.
-CSS provides the custom visual appeal, while Bootstrap handles most of the layout.
+2️ CSS3 – Styling & Layout
+
+CSS3 enhances visuals and responsiveness.
 
 CSS Features Used:
 
-Box Model: Applied padding, margins, and shadows for neat spacing.
+Box Model: Manages spacing and alignment of cards and panels.
 
-Rounded Corners: Used for cards and buttons to give a smooth, modern look.
+Rounded Corners: For panels, buttons, and progress bars.
 
-Media Queries: Adjust text and layout for smaller screens (mobile view).
+Media Queries: Adjust card size and layout for smaller screens.
 
-Theme Styling: Custom classes like .dark-theme switch between dark and light modes smoothly.
+Transitions: Smooth animations when hovering or switching themes.
 
-JavaScript + jQuery - Interactivity & Behavior
+This ensures a clean and modern appearance on all devices.
 
-We make the dashboard interactive and dynamic using JavaScript and jQuery.
+3️ JavaScript – Event Handling
 
-JavaScript Functions:
+JavaScript handles theme switching and form validation.
 
-Theme Switching:
-Toggles between light and dark mode by adding or removing the .dark-theme class dynamically.
+Key Functionalities:
 
-Filtering:
-The dropdown filter lets users view employees by department (e.g., Development, Design, Marketing).
-JavaScript shows/hides employee cards accordingly.
+Theme Toggle: Switches between light and dark themes using classList.toggle().
 
-jQuery Enhancements:
+Interactive Filters: Dynamically updates visible employee data based on user selection.
 
-Smooth Panel Animation:
-Expanding and collapsing employee performance panels using slideToggle() for better user experience.
+Data Refresh: Updates the dashboard display without reloading the page.
 
-DOM Manipulation:
-Dynamically changes button icons ("+" or "-") when panels are expanded or collapsed.
+This creates a dynamic, real-time experience for users.
 
-Bootstrap - Responsive Design & Components
+4️ jQuery – Smooth UI Interactions
 
-Bootstrap ensures the dashboard is fully responsive and mobile-friendly.
+jQuery enhances interactivity and transitions.
+
+jQuery Features Used:
+
+Expand/Collapse Panels: Users can toggle visibility of sections.
+
+Filter Animations: Smoothly show/hide filtered employee data.
+
+Fade/Slide Effects: Used for transitions when theme or filters change.
+
+These add a smooth, professional feel to the dashboard.
+
+5️ Bootstrap – Components & Responsiveness
+
+Bootstrap ensures clean layout and responsiveness.
 
 Bootstrap Features Used:
 
-Grid System:
-Used container, row, and col-md-6 / col-lg-4 to arrange employee cards neatly across devices.
+Grid System: Aligns performance cards neatly.
 
-Progress Bars:
-Visual representation of performance metrics (e.g., Task Completion 85%).
-Bootstrap's .progress and .progress-bar classes make it easy to display performance visually.
+6️ Workflow of Implementation
 
-Utility Classes:
-Used built-in classes like text-center, shadow, and btn for instant styling consistency.
+Here’s how the system flows:
 
+1. Page Structure Creation:
+
+Start with HTML5 structural tags such as header, nav, main, and footer.
+
+In the header, include the dashboard title and a theme switch button (light/dark mode).
+
+Within the main area, use Bootstrap’s grid to organize employee performance cards and filters.
+
+Each card uses <article> to semantically represent a performance summary.
+
+Add progress bars to show individual metrics using Bootstrap’s built-in components.
+
+2. Styling the Layout:
+
+Apply CSS3 for design consistency and visual hierarchy.
+
+Use the box model to space dashboard panels evenly.
+
+Add rounded corners and subtle shadows to cards for depth.
+
+Include transitions for smooth color or theme changes.
+
+Use media queries to rearrange columns into a vertical layout on small screens.
+
+3. Adding Interactivity:
+
+Implement JavaScript for theme switching functionality.
+
+When the user toggles the theme button, JavaScript changes CSS classes between light and dark modes.
+
+Use JS to update displayed performance data dynamically when filters are changed (like department or rating range).
+
+4. Enhancing with jQuery:
+
+Apply slideToggle() and fadeIn()/fadeOut() animations for expanding or collapsing panels.
+
+Smoothly animate dashboard updates when filter options are applied.
+
+Use jQuery for subtle animations to make the theme toggle and data transitions seamless.
+
+5. Responsive Testing:
+
+Check layout behavior using Bootstrap’s grid system on various screen widths.
+
+Ensure performance cards and graphs align properly on tablets and mobile devices.
+
+Verify that the theme switch and progress bars remain functional and readable across all resolutions.
+
+Progress Bars: Show employee performance visually.
+
+Buttons and Navbar: Maintain consistency across screen sizes.
