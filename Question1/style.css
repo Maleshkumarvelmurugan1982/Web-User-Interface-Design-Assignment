@@ -1,0 +1,23 @@
+body {
+  font-family: "Times New Roman", sans-serif;
+  background: blue;
+  min-height: 100vh;
+}
+form, #eventDetails, #preview {
+  border-radius: 15px;
+}
+input, select {
+  border-radius: 10px;
+}
+button {
+  border-radius: 10px;
+}
+button:hover {
+  background-color: red;
+}
+@media (max-width: 576px) {
+  form {
+    padding: 2rem 1rem;
+  }
+}
+
