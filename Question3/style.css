@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: red;
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: green;
+  text-align: center;
+  padding: 15px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.dest-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+button {
+  border: none;
+  background-color: yellow;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: violet;
+}
+
+footer {
+  text-align: center;
+  background-color: lightblue;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+  }
+  .card-body {
+    font-size: 14px;
+  }
+}
+
