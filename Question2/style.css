@@ -1,0 +1,31 @@
+body {
+  font-family: "Times New Roman", sans-serif;
+  background-color: red;
+  transition: background-color 0.4s, color 0.4s;
+}
+header, footer {
+  background-color: black;
+}
+.dark-theme {
+  background-color: blue;
+  color: green;
+}
+.dark-theme header, .dark-theme footer {
+  background-color: yellow;
+}
+.card {
+  border-radius: 15px;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  .card-body {
+    font-size: 0.9rem;
+  }
+}
+
